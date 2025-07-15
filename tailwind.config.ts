@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -143,10 +142,10 @@ export default {
 				},
 				'drive': {
 					'0%': {
-						transform: 'translateX(-100vw)'
+						transform: 'translateX(-150px)'
 					},
 					'100%': {
-						transform: 'translateX(100vw)'
+						transform: 'translateX(calc(100vw + 50px))'
 					}
 				}
 			},
@@ -158,7 +157,7 @@ export default {
 				'slide-in-right': 'slide-in-right 0.6s ease-out',
 				'glow': 'glow 2s ease-in-out infinite',
 				'float': 'float 3s ease-in-out infinite',
-				'drive': 'drive 8s linear infinite'
+				'drive': 'drive 12s linear infinite'
 			}
 		}
 	},
