@@ -21,6 +21,7 @@ const Header = () => {
     { name: 'Home', href: '#home' },
     { name: 'Models', href: '#models' },
     { name: 'Why Ferrari', href: '#why-ferrari' },
+    { name: 'Components', href: '/components' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -35,6 +36,8 @@ const Header = () => {
       } else {
         document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
       }
+    } else {
+      navigate(href);
     }
     setIsMenuOpen(false);
   };
